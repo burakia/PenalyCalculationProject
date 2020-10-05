@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PenaltyCalculationModelStoreContainer" CdmEntityContainer="PenaltyCalculationEntities">
+    <EntitySetMapping Name="Book">
+      <EntityTypeMapping TypeName="PenaltyCalculationModel.Book">
+        <MappingFragment StoreEntitySet="Book">
+          <ScalarProperty Name="bookId" ColumnName="bookId" />
+          <ScalarProperty Name="bookName" ColumnName="bookName" />
+          <ScalarProperty Name="checkedOutDate" ColumnName="checkedOutDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Country">
+      <EntityTypeMapping TypeName="PenaltyCalculationModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="currencyDesc" ColumnName="currencyDesc" />
+          <ScalarProperty Name="currency" ColumnName="currency" />
+          <ScalarProperty Name="countryId" ColumnName="countryId" />
+          <ScalarProperty Name="countryName" ColumnName="countryName" />
+          <ScalarProperty Name="countryCode" ColumnName="countryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
